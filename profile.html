@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Choky</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            margin-top: -75px;
+            background-color: #3b82f6;
+        }
+
+        .profile-info {
+            margin: 20px 0;
+        }
+
+        .profile-info h1 {
+            font-size: 26px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            color: #00e1ff;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            color: #cbd5e1;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.2);
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00e1ff;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+
+        @media screen and (max-width: 500px) {
+            .profile-card {
+                padding: 15px;
+                max-width: 95%;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+                margin-top: -60px;
+            }
+
+            .profile-info h1 {
+                font-size: 22px;
+            }
+
+            .social-links a {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="profile.jpg" alt="Choky's Photo" class="profile-photo">
+        <div class="profile-info">
+            <h1>Choky</h1>
+            <p>Software Developer | Problem Solver | Tech Enthusiast</p>
+            <p>"Building solutions to make the world a better place."</p>
+        </div>
+        <div class="social-links">
+            <a href="mailto:choky@example.com" title="Email">
+                &#9993;
+            </a>
+            <a href="https://linkedin.com/in/choky" target="_blank" title="LinkedIn">
+                &#xf0e1;
+            </a>
+            <a href="https://github.com/choky" target="_blank" title="GitHub">
+                &#xf09b;
+            </a>
+            <a href="https://twitter.com/choky" target="_blank" title="Twitter">
+                &#xf099;
+            </a>
+        </div>
+        <a href="#contact-me" class="cta-button">Contact</a>
+    </div>
+</body>
+</html>
