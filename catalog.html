@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk Digital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056d6;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0056d6, #007bff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #ffdd57;
+            color: #0056d6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .catalog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin: 10px 0 5px;
+        }
+
+        .product-price {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #0056d6;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta button {
+            background-color: #ffdd57;
+            color: #0056d6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #0056d6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Katalog Produk Digital
+    </header>
+
+    <nav>
+        <a href="#catalog">Katalog</a>
+        <a href="#cta">Promo</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#footer">Kontak</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Selamat Datang di Katalog Digital Kami</h1>
+        <p>Temukan produk terbaik dengan harga terjangkau, hanya di sini!</p>
+        <button>Ayo Mulai Belanja</button>
+    </section>
+    <div class="catalog-container">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Product 1">
+            <div class="product-info">
+                <h3 class="product-title">Produk A</h3>
+                <p class="product-price">Rp 100.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk A yang menarik dan informatif.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Product 2">
+            <div class="product-info">
+                <h3 class="product-title">Produk B</h3>
+                <p class="product-price">Rp 150.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk B yang menarik dan informatif.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Product 3">
+            <div class="product-info">
+                <h3 class="product-title">Produk C</h3>
+                <p class="product-price">Rp 200.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk C yang menarik dan informatif.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Product 4">
+            <div class="product-info">
+                <h3 class="product-title">Produk D</h3>
+                <p class="product-price">Rp 250.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk D yang menarik dan informatif.</p>
+            </div>
+        </div>
+    </div>
+    <div id="catalog" class="catalog-container">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Produk 1">
+            <div class="product-info">
+                <h3 class="product-title">Produk A</h3>
+                <p class="product-price">Rp 100.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk A yang menarik.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Produk 2">
+            <div class="product-info">
+                <h3 class="product-title">Produk B</h3>
+                <p class="product-price">Rp 150.000</p>
+                <p class="product-description">Deskripsi singkat tentang Produk B yang menarik.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="cta" class="cta">
+        <h2>Diskon Spesial!</h2>
+        <p>Dapatkan penawaran menarik hingga 50% untuk pembelian bulan ini.</p>
+        <button>Belanja Sekarang</button>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <p class="testimonial">"Produk berkualitas, pelayanan sangat memuaskan!" - Andi</p>
+        <p class="testimonial">"Belanja jadi lebih mudah dan cepat." - Siti</p>
+    </sectio>
+
+    <footer id="footer">
+        &copy; 2024 Katalog Produk Digital. All Rights Reserved.
+    </footer>
+</body>
+</html>
